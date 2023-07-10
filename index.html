@@ -5,35 +5,369 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <title>柯睿謙的作品集</title>
-
-
 </head>
+<style>
+    @media (min-width: 768px) {
+        @-webkit-keyframes balloon1 {
+
+            0%,
+            100% {
+                -webkit-transform: translateY(0) rotate(-6deg);
+            }
+
+            50% {
+                -webkit-transform: translateY(-20px) rotate(8deg);
+            }
+        }
+
+        @-moz-keyframes balloon1 {
+
+            0%,
+            100% {
+                -moz-transform: translateY(0) rotate(-6deg);
+            }
+
+            50% {
+                -moz-transform: translateY(-20px) rotate(8deg);
+            }
+        }
+
+        @-o-keyframes balloon1 {
+
+            0%,
+            100% {
+                -o-transform: translateY(0) rotate(-6deg);
+            }
+
+            50% {
+                -o-transform: translateY(-20px) rotate(8deg);
+            }
+        }
+
+        @keyframes balloon1 {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(-6deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(8deg);
+            }
+        }
+
+        /* BAllOON 0*/
+        @-webkit-keyframes balloon3 {
+
+            0%,
+            100% {
+                -webkit-transform: translate(0, -10px) rotate(6eg);
+            }
+
+            50% {
+                -webkit-transform: translate(-20px, 30px) rotate(-8deg);
+            }
+        }
+
+        @-moz-keyframes balloon3 {
+
+            0%,
+            100% {
+                -moz-transform: translate(0, -10px) rotate(6eg);
+            }
+
+            50% {
+                -moz-transform: translate(-20px, 30px) rotate(-8deg);
+            }
+        }
+
+        @-o-keyframes balloon3 {
+
+            0%,
+            100% {
+                -o-transform: translate(0, -10px) rotate(6eg);
+            }
+
+            50% {
+                -o-transform: translate(-20px, 30px) rotate(-8deg);
+            }
+        }
+
+        @keyframes balloon3 {
+
+            0%,
+            100% {
+                transform: translate(0, -10px) rotate(6eg);
+            }
+
+            50% {
+                transform: translate(-20px, 30px) rotate(-8deg);
+            }
+        }
+
+        /* BAllOON 3*/
+        @-webkit-keyframes balloon4 {
+
+            0%,
+            100% {
+                -webkit-transform: translate(10px, -10px) rotate(-8eg);
+            }
+
+            50% {
+                -webkit-transform: translate(-15px, 20px) rotate(10deg);
+            }
+        }
+
+        @-moz-keyframes balloon4 {
+
+            0%,
+            100% {
+                -moz-transform: translate(10px, -10px) rotate(-8eg);
+            }
+
+            50% {
+                -moz-transform: translate(-15px, 10px) rotate(10deg);
+            }
+        }
+
+        @-o-keyframes balloon4 {
+
+            0%,
+            100% {
+                -o-transform: translate(10px, -10px) rotate(-8eg);
+            }
+
+            50% {
+                -o-transform: translate(-15px, 10px) rotate(10deg);
+            }
+        }
+
+        @keyframes balloon4 {
+
+            0%,
+            100% {
+                transform: translate(10px, -10px) rotate(-8eg);
+            }
+
+            50% {
+                transform: translate(-15px, 10px) rotate(10deg);
+            }
+        }
+
+        .balloon>div {
+            width: 104px;
+            height: 140px;
+            background: rgba(182, 15, 97, 0.9);
+            border-radius: 0;
+            border-radius: 80% 80% 80% 80%;
+            margin: 0 auto;
+            position: absolute;
+            padding: 10px;
+            box-shadow: inset 17px 7px 10px rgba(182, 15, 97, 0.9);
+            -webkit-transform-origin: bottom center;
+        }
+
+        .balloon>div:nth-child(1) {
+            background: rgba(182, 15, 97, 0.9);
+            left: 0;
+            box-shadow: inset 10px 10px 10px rgba(135, 11, 72, 0.9);
+            -webkit-animation: balloon1 6s ease-in-out infinite;
+            -moz-animation: balloon1 6s ease-in-out infinite;
+            -o-animation: balloon1 6s ease-in-out infinite;
+            animation: balloon1 6s ease-in-out infinite;
+        }
+
+        .balloon>div:nth-child(1):before {
+            color: rgba(182, 15, 97, 0.9);
+        }
+
+        .balloon>div:nth-child(2) {
+            background: rgba(242, 112, 45, 0.9);
+            left: 120px;
+            box-shadow: inset 10px 10px 10px rgba(222, 85, 14, 0.9);
+            -webkit-animation: balloon2 6s ease-in-out infinite;
+            -moz-animation: balloon2 6s ease-in-out infinite;
+            -o-animation: balloon2 6s ease-in-out infinite;
+            animation: balloon2 6s ease-in-out infinite;
+        }
+
+        .balloon>div:nth-child(2):before {
+            color: rgba(242, 112, 45, 0.9);
+        }
+
+        .balloon>div:nth-child(3) {
+            background: rgba(45, 181, 167, 0.9);
+            left: 240px;
+            box-shadow: inset 10px 10px 10px rgba(35, 140, 129, 0.9);
+            -webkit-animation: balloon4 6s ease-in-out infinite;
+            -moz-animation: balloon4 6s ease-in-out infinite;
+            -o-animation: balloon4 6s ease-in-out infinite;
+            animation: balloon4 6s ease-in-out infinite;
+        }
+
+        .balloon>div:nth-child(3):before {
+            color: rgba(45, 181, 167, 0.9);
+        }
+
+        .balloon>div:nth-child(4) {
+            background: rgba(190, 61, 244, 0.9);
+            left: 360px;
+            box-shadow: inset 10px 10px 10px rgba(173, 14, 240, 0.9);
+            -webkit-animation: balloon1 5s ease-in-out infinite;
+            -moz-animation: balloon1 5s ease-in-out infinite;
+            -o-animation: balloon1 5s ease-in-out infinite;
+            animation: balloon1 5s ease-in-out infinite;
+        }
+
+        .balloon>div:nth-child(4):before {
+            color: rgba(190, 61, 244, 0.9);
+        }
+
+        .balloon>div:nth-child(5) {
+            background: rgba(180, 224, 67, 0.9);
+            left: 480px;
+            box-shadow: inset 10px 10px 10px rgba(158, 206, 34, 0.9);
+            -webkit-animation: balloon3 5s ease-in-out infinite;
+            -moz-animation: balloon3 5s ease-in-out infinite;
+            -o-animation: balloon3 5s ease-in-out infinite;
+            animation: balloon3 5s ease-in-out infinite;
+        }
+
+        .balloon>div:nth-child(5):before {
+            color: rgba(180, 224, 67, 0.9);
+        }
+
+        .balloon>div:nth-child(6) {
+            background: rgba(242, 194, 58, 0.9);
+            left: 600px;
+            box-shadow: inset 10px 10px 10px rgba(234, 177, 15, 0.9);
+            -webkit-animation: balloon2 3s ease-in-out infinite;
+            -moz-animation: balloon2 3s ease-in-out infinite;
+            -o-animation: balloon2 3s ease-in-out infinite;
+            animation: balloon2 3s ease-in-out infinite;
+        }
+
+        .balloon>div:nth-child(6):before {
+            color: rgba(242, 194, 58, 0.9);
+        }
+
+        .balloon>div:before {
+            color: rgba(182, 15, 97, 0.9);
+            position: absolute;
+            bottom: -11px;
+            left: 52px;
+            content: "▲";
+            font-size: 1em;
+        }
+
+        .text-md-dark {
+            color: #333;
+        }
+
+        .balloon {
+            width: 738px;
+            margin: 0 auto;
+            padding-top: 30px;
+            position: relative;
+        }
+
+        span {
+            font-size: 4.8em;
+            color: white;
+            position: relative;
+            top: 30px;
+            left: 50%;
+            margin-left: -27px;
+            text-transform: uppercase;
+
+        }
+
+        h1 {
+            position: relative;
+            top: 200px;
+            text-align: center;
+            color: white;
+            font-size: 3.5em;
+        }
+
+        body {
+            background-image: radial-gradient(#374566, #010203);
+
+        }
+
+        .container2 {
+            height: 420px;
+            padding: 10px;
+            margin: 0 auto;
+            position: relative;
+            font-family: 'Wendy One', sans-serif;
+        }
+
+        .auto-color {
+            color: white;
+        }
+    }
+
+    /* 在768以下會套用這個色彩 */
+    @media (max-width: 768px) {
+        .font-center-white {
+            display: flex;
+            justify-content: center;
+        }
+
+        .text-all-sm-light {
+            color: #FFF;
+            border-color: #FFF;
+            font-size: 25px;
+        }
+
+        .bg-white2 {
+            border-radius: 25px 25px 25px 25px;
+            background: #fff;
+        }
+
+        .balloon {
+            display: none;
+        }
+
+        .auto-color {
+            color: #000;
+        }
+
+        .cardbody-sm {
+            width: 28rem;
+            text-align: center;
+        }
+    }
+</style>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-mainblue">
-        <a class="navbar-brand bg-mainblue text-success" href="#">作品集</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">
+            <img src="./img/JABARLOGO.png" width="30" height="30" alt="">
+        </a>
+        <a class="navbar-brand text-success " href="#">作品集</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link text-success" href="./blog.html">關於我<span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-success" href="./aboutMe.html">關於我<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="text-success nav-link" href="./blog.html">聯絡我<span class="sr-only">(current)</span></a>
+                    <a class="text-success nav-link" href="./callMe.html">聯絡我<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
-
     </nav>
 
     <div class="header">
@@ -77,13 +411,13 @@
 
     <div class="container-fluid mt-2">
         <div class="row">
-            <div class="col-md-3 sticky-top">
+            <div class="col-md-3">
                 <!-- sticky-top 將欄位固定在上方 -->
-                <div class="list-group  mt-3 sticky-top">
-                    <div class="card shadow p-3 mb-5 bg-white rounded " style="width:20rem;">
+                <div class="list-group mt-3">
+                    <div class="card shadow p-3 mb-5 bg-white rounded cardbody-sm">
                         <img src="./img/bighead.jpg"
-                            class="shadow p-3 mb-5 bg-white rounded card-img-top rounded-circle"
-                            style="width: 200px;height: 250px; margin-left: 30px; margin-top: 25px;">
+                            class="shadow p-3 mb-5 bg-white rounded card-img-top rounded-circle d-none d-md-block"
+                            style="width: 150px;height: 200px; margin-left: 70px">
                         <div class="card-body">
                             <h5 class="card-title font-weight-bold">Ryan</h5>
                             <p class="text-secondary">UIUX designer</p>
@@ -91,14 +425,12 @@
                                 我是一名UIUX設計師，擁有前端工程師的經歷，我能清楚了解設計師與工程師雙方的立場進行有效的溝通，透過近年來的工作實務經驗，及自學網路課程，精進自己，並應用在工作上活用。
                             </p>
                         </div>
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb bg-light justify-content-center">
-                                <li class="breadcrumb-item "><a href="#pane-1" class="text-success"
-                                        data-toggle="list">UIUX設計</a></li>
-                                <li class="breadcrumb-item "><a href="#pane-2" class="text-success"
-                                        data-toggle="list">網頁設計</a></li>
-                            </ol>
-                        </nav>
+                        <ul class="list-group bg-light">
+                            <li class="list-group-item text-center" aria-current="true"><a href="#pane-1"
+                                    class="text-success" data-toggle="list">UIUX設計</a></li>
+                            <li class="list-group-item text-center"><a href="#pane-2" class="text-success"
+                                    data-toggle="list">網頁設計</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -147,7 +479,7 @@
                             </div>
                             <div class="col-lg-4 mb-4 mt-3 col-sm-5">
                                 <div class="card text-center border-0 box-shadow card-high">
-                                    <img src="./img/AppDesign.png" class="card-img-top" alt="...">
+                                    <img src="./img/AppDesign.png" class="card-img-top w-100 h-50" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title mt-2 fw-bold">線上課程APP設計美感與實作</h5>
                                         <p class="card-text">購買線上課程精進自我，實作現在市場需求線上課程教學產品</p>
@@ -184,7 +516,7 @@
                             </div>
                             <div class="col-lg-4 mb-4 mt-3 col-sm-5">
                                 <div class="card text-center border-0 box-shadow card-high">
-                                    <img src="./img/ART.png" class="card-img-top" alt="...">
+                                    <img src="./img/ART.png" class="card-img-top w-100 h-50" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title"></h5>
                                         <p class="card-text">
@@ -208,17 +540,17 @@
                         <div class="row">
                             <div class="col-lg-4 mb-4 mt-3 col-sm-5">
                                 <div class="card text-center border-0 box-shadow card-high h-100">
-                                    <img src="https://images.unsplash.com/photo-1597345637412-9fd611e758f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVlZiUyMG5vb2RsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                                        class="card-img-top" alt="...">
+                                    <img src="./img/BMI.png" class="card-img-top w-100 h-50" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">半筋紅燒牛肉麵</h5>
+                                        <h5 class="card-title">BMI計算機</h5>
                                         <p class="card-text">
-                                            半筋紅燒牛肉麵，湯底濃郁鮮美，牛肉酥燒多汁，配上彈牙麵條，每一口都是舌尖上的享受。絕對是經典美食中的必嘗之選！</p>
+                                            "使用BMI計算機，評估你的身體質量指數，了解健康狀態，提供個人化建議和健康目標，並使用不同顏色來標示體重程度，即日期。"</p>
                                     </div>
                                     <div class="card-footer border-top-0 bg-white bg-shadow">
                                         <div class="btn-group btn-group-sm " role="group" aria-label="Basic example">
                                             <div class="btn btn-sm " aria-label="Basic example">
-                                                <a href="./n1_1.html" class="btn btn-secondary btn-outline">快速了解</a>
+                                                <a href="https://ryan55288.github.io/BMI/"
+                                                    class="btn btn-secondary btn-outline">快速了解</a>
                                             </div>
                                         </div>
                                     </div>
@@ -226,17 +558,17 @@
                             </div>
                             <div class="col-lg-4 mb-4 mt-3 col-sm-5">
                                 <div class="card text-center border-0 box-shadow card-high">
-                                    <img src="https://media.istockphoto.com/photos/lanzhou-stretched-noodles-picture-id1293674026?b=1&k=20&m=1293674026&s=170667a&w=0&h=SCRwBJLQjDj3qwq25Bk0pb2COJSoZmctjAyhkKp9SJk="
-                                        class="card-img-top" alt="...">
+                                    <img src="./img/travel.png" class="card-img-top w-100 h-50" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">紅燒素食麵</h5>
-                                        <p class="card-text">紅燒素食材面，湯頭香濃，充盈食材原味，搭配豐盛的蔬菜和口腔獨特的麵條，給您帶來健康與美味的完美結合。
+                                        <h5 class="card-title">高雄旅遊網站</h5>
+                                        <p class="card-text">使用ajax技術，去接高雄旅遊景點API並且成功渲染在畫面上。
                                         </p>
                                     </div>
                                     <div class="card-footer border-top-0 bg-white">
                                         <div class="btn-group btn-group-sm " role="group" aria-label="Basic example">
                                             <div class="btn btn-sm " aria-label="Basic example">
-                                                <a href="./n1_2.html" class="btn btn-secondary btn-outline">快速了解</a>
+                                                <a href="https://ryan55288.github.io/travel/"
+                                                    class="btn btn-secondary btn-outline">快速了解</a>
                                             </div>
                                         </div>
                                     </div>
@@ -244,16 +576,18 @@
                             </div>
                             <div class="col-lg-4 mb-4 mt-3 col-sm-5">
                                 <div class="card text-center border-0 box-shadow card-high">
-                                    <img src="https://images.unsplash.com/photo-1509680859026-7d8cfc6894f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHNvdXAlMjBub29kbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-                                        class="card-img-top" alt="...">
+                                    <img src="./img/foodweb.png" class="card-img-top w-100 h-50 " alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">日式烏龍麵</h5>
-                                        <p class="card-text">日式烏龍面，麵條滑嫩有激情，湯頭清爽鮮美，搭配精選配料，展示日本料理的精華，帶您享受一路感受與風味的美食之旅。</p>
+                                        <h5 class="card-title">Jabar美食網站</h5>
+                                        <p class="card-text overflow-auto">
+                                            使用figma繪製自有品牌Jabar，包含Jabar部落格、Jabar的成長故事、Jabar電商網站、客服使用者後台、Jabar影音網站(還再持續更新)，為目前使用切版技術為最大的一個設計專案。
+                                        </p>
                                     </div>
                                     <div class="card-footer border-top-0 bg-white">
                                         <div class="btn-group btn-group-sm " role="group" aria-label="Basic example">
                                             <div class="btn btn-sm " aria-label="Basic example">
-                                                <a href="./n1_3.html" class="btn btn-secondary btn-outline">快速了解</a>
+                                                <a href="https://ryan55288.github.io/foodweb/"
+                                                    class="btn btn-secondary btn-outline">快速了解</a>
                                             </div>
                                         </div>
                                     </div>
@@ -265,23 +599,43 @@
             </div>
         </div>
     </div>
-    <div class="footer1 mt-5">
+    <div class="footer1 mt-5 container-fluid">
         <div class="d-flex justify-content-center">
-            <div class="hr-edge-weak "></div>
-            <p class="text-white fz-50" style="padding-bottom: 50px;">歡迎參觀我的經歷</p>
+            <p class="text-white fz-50 text-all-sm-light" style="padding-bottom: 50px;">歡迎參觀我的經歷</p>
         </div>
         <div class="d-flex justify-content-around">
             <a href="https://www.facebook.com/ryan.ke.315"> <i class="fab fa-facebook-square text-white fa-5x"></i></a>
+            <p class="fz-45 text-white">vs</p>
             <a href="https://www.instagram.com/ryan.ke.315/"><i class="fab fa-instagram text-white fa-5x"></i></a>
         </div>
     </div>
-    <div class="footer2 text-center">
-        <div>
-            <p class="text-white mt-3"><i class="far fa-copyright"></i><i class="mr-1 far fa-registered"></i>Ryan版權所有
-            </p>
-            <p class="text-white mt-3">2023 Life is Amazing</p>
+    <div class="container-fluid">
+        <div class="container2 mt-3">
+            <div class="balloon mt-3">
+                <div><span>☺</span>
+                </div>
+                <div><span>H</span>
+                </div>
+                <div><span>E</span>
+                </div>
+                <div><span>L</span>
+                </div>
+                <div><span>L</span>
+                </div>
+                <div><span>O</span>
+                </div>
+            </div>
+            <h1 class="mt-3 text-center">Ryan's Portfolio</h1>
         </div>
     </div>
+    <div class="text-center">
+        <div>
+            <p class="auto-color mt-3"><i class="far fa-copyright"></i><i class="mr-1 far fa-registered"></i>Ryan版權所有
+            </p>
+            <p class="auto-color mt-3">My Life is Amazing</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>

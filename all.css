@@ -1,156 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-	display: block;
-}
-
-body {
-	line-height: 1;
-}
-
-ol,
-ul {
-	list-style: none;
-}
-
-blockquote,
-q {
-	quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* ////////////////////////////CSSRESET//////////////////// */
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-.btn-cart {
-	background: transparent;
-	position: relative;
-}
-
-.btn-cart .badge {
-	position: absolute;
-	top: -1px;
-	right: -1px;
-}
-
 .dropdown-menu-right {
 	right: 0;
 	left: auto;
@@ -170,8 +17,8 @@ table {
 	min-height: 400px;
 }
 
-.jumbotron-total-bg {
-	background-image: url(https://images.unsplash.com/photo-1553531889-56cc480ac5cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2hvcHBpbmclMjBzdXBlcm1hcmtldHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60);
+.jumbotron-resume-bg {
+	background-image: url(https://images.unsplash.com/photo-1471922694854-ff1b63b20054?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmVhY2h8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=900&q=60);
 	background-size: auto;
 	background-position: center center;
 	min-height: 400px;
@@ -187,10 +34,9 @@ table {
 	border-radius: 25px;
 }
 
-.bg-lighter-total {
-	background-color: rgba(255, 255, 255, 0.7);
+.bg-lighter2 {
+	background-color: rgba(255, 255, 255, 0.35);
 	border-radius: 25px;
-	height: 250px;
 }
 
 /* 陰影部分 1.水平移動2.上下垂直3.擴散*/
@@ -225,13 +71,8 @@ table {
 }
 
 .footer1 {
-	background: #5C5C5C;
-	padding: 100px;
-}
-
-.footer2 {
 	background: #13ab67;
-	padding: 3px;
+	padding: 150px;
 }
 
 /* 底下ICON */
