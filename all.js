@@ -1,12 +1,44 @@
-    $(document).ready(function () {
-        $('[data-toggle="list"]').click(function () {
-            var target = $(this).attr('href');
-            $(target).tab('show');
-        });
-    });
-    window.open = function () {};
-    window.print = function () {};
-    // Support hover state for mobile.
-    if (false) {
-        window.ontouchstart = function () {};
+const action2 = document.getElementById("action");
+let isAnimating = false;
+
+function addAnimationClass() {
+    if (!isAnimating) {
+        isAnimating = true;
+        action2.classList.add("animate__animated", "animate__bounceInLeft");
+
+        // 使用 setTimeout 延遲一段時間後再移除動畫的 CSS 類別
+        setTimeout(() => {
+            action2.classList.remove("animate__bounceInLeft");
+            isAnimating = false;
+        }, 1000); // 這裡可以自行調整延遲時間，單位為毫秒
     }
+}
+
+if (action2) {
+    action2.addEventListener("click", addAnimationClass);
+}
+
+const searchBox = document.getElementById("searchBox");
+const searchButton = document.getElementById("searchButton");
+const experience = document.getElementById("experience");
+
+searchButton.addEventListener("click", function () {
+    const keyword = searchBox.value.trim().toLowerCase();
+    const paragraphs = experience.getElementsByTagName("p");
+
+    let found = false;
+    for (const paragraph of paragraphs) {
+        const text = paragraph.textContent.toLowerCase();
+        if (text.indexOf(keyword) !== -1) {
+            paragraph.style.backgroundColor = "yellow"; // 做出搜尋效果
+            paragraph.scrollIntoView({
+                behavior: "smooth"
+            }); // 滑動到該元素
+            found = true;
+        }
+    }
+
+    if (!found) {
+        alert("找不到相似的結果");
+    }
+});
