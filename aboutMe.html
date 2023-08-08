@@ -16,11 +16,14 @@
 </head>
 <style>
     @media (max-width: 768px) {
-
-        .cardbody-sm {
-            width: 28rem;
-            text-align: center;
+        .mt10px768 {
+            margin-top: 10px;
         }
+    }
+
+    body {
+        overflow-x: hidden;
+        /* 隱藏水平滾動 */
     }
 </style>
 
@@ -29,11 +32,15 @@
         <a class="navbar-brand" href="#">
             <img src="./img/JABARLOGO.png" width="30" height="30" alt="">
         </a>
-        <a class="navbar-brand text-success " href="./index.html">作品集</a>
+        <a class="navbar-brand text-success " href="./index.html">回首頁</a>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link text-success" href="./aboutMe.html">關於我<span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-success" href="./aboutMe.html">工作經歷<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-success" href="./tennis.html">桌球老師<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -46,10 +53,10 @@
     <div class="header">
         <div class="jumbotron jumbotron-fluid jumbotron-resume-bg  d-flex  align-items-end">
             <div class="container">
-                <div class="bg-lighter2 p-3">
-                    <h2 class="display-4 font-weight-bold">詳細經歷</h2>
-                    <p class="font-weight-bold">
-                        我是一名經驗豐富的UIUX設計師，了解用許多用戶介面、圖形介面且擅長跨界溝通與前後端開發，我的作品集展示了多個項目，包括設計能力與技術實現，擁有「團隊合作」及「獨立完成作業」的經驗與特質，且勇於挑戰新事物。
+                <div class="bg-lighter2 p-5">
+                    <h2 class="fz-45 font-weight-bold">詳細介紹</h2>
+                    <p class="font-weight-bold mt-2">
+                        您好!!我是一名經驗豐富的UIUX設計師，了解用許多用戶介面、圖形介面且擅長跨界溝通與前後端開發，我的作品集展示了多個項目，包括設計能力與技術實現，擁有「團隊合作」及「獨立完成作業」的經驗與特質，且勇於挑戰新事物。
                     </p>
                 </div>
             </div>
@@ -57,205 +64,183 @@
     </div>
 
     <div class="container-fluid mt-2">
-        <div class="row">
-            <div class="col-md-3 animate__animated animate__fadeInBottomLeft ">
-                <div class="list-group mt-2">
-                    <div class="card shadow p-3 mb-5 bg-white rounded cardbody-sm">
-                        <img src="./img/bighead.jpg"
-                            class="shadow p-3 mb-5 bg-white rounded card-img-top rounded-circle d-none d-md-block"
-                            style="width: 150px;height: 200px; margin-left: 70px">
-                        <div class="card-body">
-                            <h5 class="card-title font-weight-bold">Ryan</h5>
-                            <p class="text-secondary">UIUX designer</p>
-                            <p class="card-text">
-                                我是一名UIUX設計師，擁有前端工程師的經歷，我能清楚了解設計師與工程師雙方的立場進行有效的溝通，透過近年來的工作實務經驗，及自學網路課程，精進自己，並應用在工作上活用。
-                            </p>
-                        </div>
+        <div class="tab-content animate__animated animate__zoomInDown">
+            <div class="p-1">
+                <div class="card box-shadow text-center">
+                    <div class="card-body">
+                        <img src="./img/OITLOGO.png" alt="">
+                        <h5 class="card-title mt-3 fw-bold">亞東科技大學電子系</h5>
+                        <p class="card-text mt-2">
+                            希望職稱：UIUX設計師、產品開發人員PM、測試工程師</p>
+                    </div>
+                    <div class="card-footer border-top-0 bg-white bg-shadow">
+                        <table class="table table table-hover">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">個人資料</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody class="">
+                                <tr class="">
+                                    <th scope="row">性別/年齡/兵役</th>
+                                    <td>男/26歲/役畢(2020/7)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">就業狀態</th>
+                                    <td>待業中</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">主要手機</th>
+                                    <td>0903505423</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">E-mail</th>
+                                    <td>fieldofgod3@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">駕駛執照</th>
+                                    <td>輕型機車駕照、普通重型機車駕照、普通小型車駕照</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-9 animate__animated animate__fadeInBottomRight">
-                <div class="row">
-                    <div class="col-lg-12 col-md-6 mt-2 col-sm-6">
-                        <div class="card text-center box-shadow">
-                            <div class="card-body">
-                                <img src="./img/OITLOGO.png" alt="">
-                                <h5 class="card-title mt-3 fw-bold">亞東科技大學電子系</h5>
-                                <p class="card-text mt-2">
-                                    希望職稱：UIUX設計師、產品開發人員PM、測試工程師</p>
-                            </div>
-                            <div class="card-footer border-top-0 bg-white bg-shadow">
-                                <table class="table table table-hover">
-                                    <thead class="thead-dark">
-                                        <tr>
-                                            <th scope="col">個人資料</th>
-                                            <th scope="col"></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="">
-                                        <tr class="">
-                                            <th scope="row">性別/年齡/兵役</th>
-                                            <td>男/26歲/役畢(2020/7)</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">就業狀態</th>
-                                            <td>待業中</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">主要手機</th>
-                                            <td>0903505423</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">E-mail</th>
-                                            <td>fieldofgod3@gmail.com</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">駕駛執照</th>
-                                            <td>輕型機車駕照、普通重型機車駕照、普通小型車駕照</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="card box-shadow mt-3">
-                            <div class="card-header">
-                                <h5 class="card-title mt-2 font-weight-bold">學歷</h5>
-                            </div>
-                            <div class="card-footer border-top-0 bg-white bg-shadow">
-                                <table class="table table table-hover">
-                                    <tbody class="">
-                                        <thead class="thead-dark">
-                                            <tr>
-                                                <th scope="col">生涯階段</th>
-                                                <th scope="col"></th>
-                                            </tr>
-                                        </thead>
-                                        <tr class="">
-                                            <th scope="row">大學</th>
-                                            <td>亞東科技大學</td>
-                                        </tr>
-                                        <tr class="">
-                                            <th scope="row">高中</th>
-                                            <td>內湖高工</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="card box-shadow mt-3">
-                            <div class="card-header">
-                                <h5 class="card-title mt-2 font-weight-bold">工作經歷</h5>
-                            </div>
-                            <div class="card-footer border-top-0 bg-white bg-shadow">
-                                <table class="table table table-hover">
-                                    <tbody>
-                                        <thead class="thead-dark">
-                                            <tr>
-                                                <th scope="col">公司名稱</th>
-                                                <th scope="col">服務時間</th>
-                                                <th scope="col">職位名稱</th>
-                                            </tr>
-                                        </thead>
-                                        <tr>
-                                            <th class="">酷寶資訊有限公司（電腦軟體服務業）</th>
-                                            <td>1年四個月</td>
-                                            <td>前端工程師</td>
-                                        </tr>
-                                        <tr class="">
-                                            <th scope="row" colspan="3">工作內容:</th>
-                                        </tr>
-                                        <tr class="">
-                                            <th scope="row" colspan="3">
-                                                <div>產品開發:</div>
-                                                <div>1.多國語言設計:使用vuei18n擴充套件，製作出中英簡體多國語言功能。</div>
-                                                <div>2.新交易流程設計，開發產品交易上新流程設計，為了使用戶交易流程更加流暢，產品開發過程與老闆溝通確定新流程介面及樣式設計。</div>
-                                                <div>3.網頁跳轉至APP功能開發。</div>
-                                                <div>4.提款賣幣鎖定功能。</div>
-                                                <div>5.增加充值快選金額新欄位。</div>
-                                                <div>6.BOT聊天室機器人切版畫面。</div>
-                                                <div>7.切板新交易流程介面。</div>
-                                                <br>
-                                                <div>UIUX產品畫面設計:</div>
-                                                <div>使用Figma構想及設計</div>
-                                                <div>1.重構公司產品全部畫面及流程。</div>
-                                                <div>2.與工程師討論畫面可行度，配合前端工程師來完成網頁產品新流程畫面。</div>
-                                                <div>3.設計議價減價現成訂單icon。</div>
-                                                <div>4.設計新專案樣式，確認產品需求及更改設計產品樣式。</div>
-                                                <br>
-                                                <div>產品測試:</div>
-                                                <div>
-                                                    1.使用IOS手機及安卓手機，與網頁端交叉測試，在不同操作情景下產品會有怎麼樣的問題，當測出此問題用EXCEL紀錄，與工程師們確認並修正。
-                                                </div>
-                                                <div>2.在每次更新上新版後，會加以測試用戶常操作的功能，驗證更新上板產品，沒有出現issue。</div>
-                                                <br>
-                                                <div>客服、領導能力:</div>
-                                                <div>1.B2C上會有用戶及客戶來反映產品問題及交易問題，訂製出新制SOP替公司解決客戶及用戶使用及操作上等問題。</div>
-                                                <div>2.訂製公司新人教育訓練流程，使新進人員能在最短時間內了解公司的產品及使用方法。</div>
-                                                <div>3.訂製公司產品手冊，並且分為重點版及完整版，讓新對接的客戶可以馬上了解我們的產品，並且熟悉產品操作。</div>
-                                                <div>4.帶領過2位新人，用一周至兩周的時間用最少時間讓新進人員了解公司產品，到能獨立作業。</div>
-                                            </th>
-                                        </tr>
-                                        <tr class="text-white bg-dark">
-                                            <th scope="col">公司名稱</th>
-                                            <th scope="col">服務時間</th>
-                                            <th scope="col">職位名稱</th>
-                                        </tr>
-                                        <tr>
-                                            <th class="">小崧貿易有限公司（電子通訊／電腦週邊批發業 1~30人）</th>
-                                            <td>10個月</td>
-                                            <td>軟體工程師</td>
-                                        </tr>
-                                        <tr class="">
-                                            <th scope="row" colspan="3">工作內容</th>
-                                        </tr>
-                                        <tr class="">
-                                            <th scope="row" colspan="3">
-                                                <div>1.負責軟體之分析、設計以及程式撰寫。</div>
-                                                <div>2.規劃執行軟體架構，並控管軟體設計進度。</div>
-                                                <div>3.進行軟體之測試與修改。</div>
-                                                <div>4.燒錄晶片測試。</div>
-                                            </th>
-                                        </tr>
-                                        <tr class="text-white bg-dark">
-                                            <th scope="col">公司名稱</th>
-                                            <th scope="col">服務時間</th>
-                                            <th scope="col">職位名稱</th>
-                                        </tr>
-                                        <tr>
-                                            <th class="">
-                                                十銓科技股份有限公司（資料儲存媒體製造及複製業 100~500人）</th>
-                                            <td>6個月
-                                            </td>
-                                            <td>硬體工程師</td>
-                                        </tr>
-                                        <tr class="">
-                                            <th scope="row" colspan="3">工作內容</th>
-                                        </tr>
-                                        <tr class="">
-                                            <th scope="row" colspan="3">
-                                                <div>1.製造工程相關文件</div>
-                                                <div>2.電子物料驗證及承認</div>
-                                                <div>3.ERP系統 BOM建立</div>
-                                                <div>4.協助工程測試及分析</div>
-                                                <div>5.分析和記錄試驗數據，測試、查核硬體以達到施工說明和要求。</div>
-                                                <div>6.與PM人員討論工作排程，並評估硬體生產時程。</div>
-                                                <div>7.選擇符合施工說明和產品要求的硬體和材料。</div>
-                                                <div>8.在產品開發、生產、銷售過程間，對內部同仁及外部廠商提供相關支援。</div>
-                                                <div>9.建立、測試及修改產品原型。</div>
-                                                <div>10.維修相關治具等。</div>
-                                            </th>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+                <div class="card box-shadow mt-3">
+                    <div class="card-header">
+                        <h5 class="card-title mt-2 font-weight-bold">學歷</h5>
+                    </div>
+                    <div class="card-footer border-top-0 bg-white bg-shadow">
+                        <table class="table table table-hover">
+                            <tbody class="">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">生涯階段</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tr class="">
+                                    <th scope="row">大學</th>
+                                    <td>亞東科技大學</td>
+                                </tr>
+                                <tr class="">
+                                    <th scope="row">高中</th>
+                                    <td>內湖高工</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-
+                <div class="card box-shadow mt-3">
+                    <div class="card-header">
+                        <h5 class="card-title mt-2 font-weight-bold">工作經歷</h5>
+                    </div>
+                    <div class="card-footer border-top-0 bg-white bg-shadow">
+                        <table class="table table table-hover">
+                            <tbody>
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">公司名稱</th>
+                                        <th scope="col">服務時間</th>
+                                        <th scope="col">職位名稱</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <th class="">酷寶資訊有限公司（電腦軟體服務業）</th>
+                                    <td>1年四個月</td>
+                                    <td>前端工程師</td>
+                                </tr>
+                                <tr class="">
+                                    <th scope="row" colspan="3">工作內容:</th>
+                                </tr>
+                                <tr class="">
+                                    <th scope="row" colspan="3">
+                                        <div>產品開發:</div>
+                                        <div>1.多國語言設計:使用vuei18n擴充套件，製作出中英簡體多國語言功能。</div>
+                                        <div>2.新交易流程設計，開發產品交易上新流程設計，為了使用戶交易流程更加流暢，產品開發過程與老闆溝通確定新流程介面及樣式設計。
+                                        </div>
+                                        <div>3.網頁跳轉至APP功能開發。</div>
+                                        <div>4.提款賣幣鎖定功能。</div>
+                                        <div>5.增加充值快選金額新欄位。</div>
+                                        <div>6.BOT聊天室機器人切版畫面。</div>
+                                        <div>7.切板新交易流程介面。</div>
+                                        <br>
+                                        <div>UIUX產品畫面設計:</div>
+                                        <div>使用Figma構想及設計</div>
+                                        <div>1.重構公司產品全部畫面及流程。</div>
+                                        <div>2.與工程師討論畫面可行度，配合前端工程師來完成網頁產品新流程畫面。</div>
+                                        <div>3.設計議價減價現成訂單icon。</div>
+                                        <div>4.設計新專案樣式，確認產品需求及更改設計產品樣式。</div>
+                                        <br>
+                                        <div>產品測試:</div>
+                                        <div>
+                                            1.使用IOS手機及安卓手機，與網頁端交叉測試，在不同操作情景下產品會有怎麼樣的問題，當測出此問題用EXCEL紀錄，與工程師們確認並修正。
+                                        </div>
+                                        <div>2.在每次更新上新版後，會加以測試用戶常操作的功能，驗證更新上板產品，沒有出現issue。</div>
+                                        <br>
+                                        <div>客服、領導能力:</div>
+                                        <div>1.B2C上會有用戶及客戶來反映產品問題及交易問題，訂製出新制SOP替公司解決客戶及用戶使用及操作上等問題。</div>
+                                        <div>2.訂製公司新人教育訓練流程，使新進人員能在最短時間內了解公司的產品及使用方法。</div>
+                                        <div>3.訂製公司產品手冊，並且分為重點版及完整版，讓新對接的客戶可以馬上了解我們的產品，並且熟悉產品操作。</div>
+                                        <div>4.帶領過2位新人，用一周至兩周的時間用最少時間讓新進人員了解公司產品，到能獨立作業。</div>
+                                    </th>
+                                </tr>
+                                <tr class="text-white bg-dark">
+                                    <th scope="col">公司名稱</th>
+                                    <th scope="col">服務時間</th>
+                                    <th scope="col">職位名稱</th>
+                                </tr>
+                                <tr>
+                                    <th class="">小崧貿易有限公司（電子通訊／電腦週邊批發業 1~30人）</th>
+                                    <td>10個月</td>
+                                    <td>軟體工程師</td>
+                                </tr>
+                                <tr class="">
+                                    <th scope="row" colspan="3">工作內容</th>
+                                </tr>
+                                <tr class="">
+                                    <th scope="row" colspan="3">
+                                        <div>1.負責軟體之分析、設計以及程式撰寫。</div>
+                                        <div>2.規劃執行軟體架構，並控管軟體設計進度。</div>
+                                        <div>3.進行軟體之測試與修改。</div>
+                                        <div>4.燒錄晶片測試。</div>
+                                    </th>
+                                </tr>
+                                <tr class="text-white bg-dark">
+                                    <th scope="col">公司名稱</th>
+                                    <th scope="col">服務時間</th>
+                                    <th scope="col">職位名稱</th>
+                                </tr>
+                                <tr>
+                                    <th class="">
+                                        十銓科技股份有限公司（資料儲存媒體製造及複製業 100~500人）</th>
+                                    <td>6個月
+                                    </td>
+                                    <td>硬體工程師</td>
+                                </tr>
+                                <tr class="">
+                                    <th scope="row" colspan="3">工作內容</th>
+                                </tr>
+                                <tr class="">
+                                    <th scope="row" colspan="3">
+                                        <div>1.製造工程相關文件</div>
+                                        <div>2.電子物料驗證及承認</div>
+                                        <div>3.ERP系統 BOM建立</div>
+                                        <div>4.協助工程測試及分析</div>
+                                        <div>5.分析和記錄試驗數據，測試、查核硬體以達到施工說明和要求。</div>
+                                        <div>6.與PM人員討論工作排程，並評估硬體生產時程。</div>
+                                        <div>7.選擇符合施工說明和產品要求的硬體和材料。</div>
+                                        <div>8.維修相關治具等。</div>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="footer1 mt-5 container-fluid" id="action">
+    <div class=" footer1 mt-5 container-fluid" id="action">
         <div class="d-flex justify-content-center">
             <div class="hr-edge-weak "></div>
             <p class="text-white fz-50 text-all-sm-light">歡迎參觀我的經歷</p>

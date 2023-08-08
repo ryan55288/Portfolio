@@ -42,3 +42,18 @@ searchButton.addEventListener("click", function () {
         alert("找不到相似的結果");
     }
 });
+const video = document.getElementById("video");
+
+// 等待頁面載入完成後再綁定事件
+window.addEventListener("load", function () {
+    // 將影片暫停
+    video.pause();
+});
+
+// 監聽頁面的點擊事件
+document.addEventListener("click", function () {
+    // 如果影片還沒有播放，則開始播放影片
+    if (video.paused) {
+        video.play();
+    }
+});

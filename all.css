@@ -24,18 +24,26 @@
 	min-height: 400px;
 }
 
+.jumbotron-tennis-bg {
+	background-image: url(https://media.istockphoto.com/id/1184407264/photo/sport.jpg?s=612x612&w=0&k=20&c=-iXm9IZO4tR225qBoOzt3Gt3v4_9aAMOECAxzFElzuE=);
+	background-size: auto;
+	background-position: center center;
+	min-height: 400px;
+}
+
+
 .bg-carousel {
 	background-size: auto;
 	background-position: center center;
 }
 
 .bg-lighter {
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.4);
 	border-radius: 25px;
 }
 
 .bg-lighter2 {
-	background-color: rgba(255, 255, 255, 0.35);
+	background-color: rgba(255, 255, 255, 0.7);
 	border-radius: 25px;
 }
 
