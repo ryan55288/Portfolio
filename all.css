@@ -135,3 +135,39 @@
 .dop {
 	cursor: pointer;
 }
+
+
+@media (max-width: 768px) {
+	.little-device {
+		display: block;
+	}
+
+	.font-center-white {
+		display: flex;
+		justify-content: center;
+	}
+
+	.text-all-sm-light {
+		color: #FFF;
+		border-color: #FFF;
+		font-size: 25px;
+	}
+
+	.bg-white2 {
+		border-radius: 25px 25px 25px 25px;
+		background: #fff;
+	}
+
+	.balloon {
+		display: none;
+	}
+
+	.auto-color {
+		color: #000;
+	}
+
+	.cardbody-sm {
+		width: 28rem;
+		text-align: center;
+	}
+}
