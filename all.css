@@ -138,6 +138,14 @@
 
 
 @media (max-width: 768px) {
+	.big-head {
+		display: none;
+	}
+
+	.big-device {
+		display: none;
+	}
+
 	.little-device {
 		display: block;
 	}
